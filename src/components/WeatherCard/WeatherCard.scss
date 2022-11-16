@@ -1,0 +1,36 @@
+.weatherCard {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: max-content;
+  border: 2px solid grey;
+
+  &__location {
+    margin: 5px auto;
+  }
+  &__day {
+    margin: 0px auto;
+    font-weight: 100;
+  }
+  &__condition {
+    margin: 0px auto;
+  }
+  &__conditionText {
+    margin: 5px auto;
+  }
+  &__conditionIcon {
+    width: 60px;
+  }
+  &__temp {
+    margin: 2px auto;
+  }
+}
+
+#humidity,
+#windspeed {
+  font-weight: bold;
+  color: #dc98a7;
+}
