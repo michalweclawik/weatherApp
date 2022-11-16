@@ -11,8 +11,11 @@ const Todos = ({ todoArray, removeTodo }) => {
     <ul className="todos">
       {todoArray.map((todo) => (
         <div className="todos__list" key={todo.id}>
-          <li className="todo__task">{todo.task} </li>
-          <RiDeleteBin5Line onClick={() => handleClick(todo.id)} />
+          <li className="todos__task">{todo.task} </li>
+          <RiDeleteBin5Line
+            className="todos__delete"
+            onClick={() => handleClick(todo.id)}
+          />
         </div>
       ))}
     </ul>

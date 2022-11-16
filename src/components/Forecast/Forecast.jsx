@@ -7,7 +7,7 @@ const Forecast = ({ weatherData }) => {
 
   return (
     <div className="forecast">
-      Forecast
+      <h3>Forecast</h3>
       <div className="forecast__cards">
         {forecastArray.map((day, index) => (
           <div className="forecast__card" key={index}>
@@ -17,9 +17,7 @@ const Forecast = ({ weatherData }) => {
               {format(new Date(fromUnixTime(day.date_epoch)), "EEE")}
             </p>
 
-            <p className="forecast__temp">
-              Average Temp: {day.day.avgtemp_c} °C
-            </p>
+            <p className="forecast__temp">{day.day.avgtemp_c} °C</p>
             <p className="forecast__text">Weather: {day.day.condition.text}</p>
             <img
               src={day.day.condition.icon}

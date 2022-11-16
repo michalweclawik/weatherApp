@@ -6,11 +6,15 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Weather App </h1>
+      <h1 className="navbar__title">Weather App </h1>
       <Clock />
-      <div className="links">
-        <Link to="/weatherApp/"> Check Weather</Link>
-        <Link to="/todos">Todo List</Link>
+      <div className="navbar__links">
+        <Link to="/weatherApp/" className="navbar__weather">
+          Check Weather
+        </Link>
+        <Link to="/todos" className="navbar__todo">
+          Todo List
+        </Link>
       </div>
     </nav>
   );
