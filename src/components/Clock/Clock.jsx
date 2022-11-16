@@ -8,9 +8,9 @@ const Clock = () => {
 
   let greetings;
   if (currentHour >= 5 && currentHour <= 12) {
-    greetings = "Good Morning  🌞";
+    greetings = "Good Morning  ☕";
   } else if (currentHour > 12 && currentHour <= 18) {
-    greetings = "Good Afternoon  🥳";
+    greetings = "Good Afternoon  🍽️";
   } else {
     greetings = "Good Night  😴";
   }
