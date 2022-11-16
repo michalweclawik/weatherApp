@@ -10,7 +10,7 @@ const WeatherDetail = (props) => {
   const getWeather = async () => {
     console.log(latitude, longitude, api_key);
     const respond = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${latitude},${longitude}&days=7&aqi=yes&alerts=yes)`
+      `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${latitude},${longitude}&days=7&aqi=yes&alerts=yes)`
     );
     const weatherData = await respond.json();
     console.log(weatherData);
