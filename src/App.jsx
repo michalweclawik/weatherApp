@@ -11,7 +11,11 @@ function App() {
       <HashRouter>
         <Navbar />
         <Routes>
-          <Route excat path="/" element={<Home api_key={api_key} />} />
+          <Route
+            excat
+            path="/weatherApp/"
+            element={<Home api_key={api_key} />}
+          />
           <Route excat path="/todos" element={<TodosList />} />
         </Routes>
       </HashRouter>
